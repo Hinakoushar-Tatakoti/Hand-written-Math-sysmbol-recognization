@@ -2,8 +2,9 @@
 Using Image Processing
 
 Report:
-Group members: Hinakoushar Tatakoti
-               Hafiz M Amir Hussain
+Group members: 
+1)Hinakoushar Tatakoti
+2)Hafiz M Amir Hussain
 
 Motivation:
 Due to the technological advances in recent years, paper scientific documents are used less and less. Thus, the trend in the scientific community to use digital documents has increased considerably. Among these documents, there are scientific documents and more specifically mathematics documents.So this project give a basic prediction of mathematical symbol, to research recognizing handwritten math language in variety of applications.The main motivation for this work is both recognizing of the handwritten mathematical symbol, digits and characters which can be further be used for mathematical expression recognition.
