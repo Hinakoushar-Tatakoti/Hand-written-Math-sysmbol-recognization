@@ -21,3 +21,16 @@ Offline Handwritten math symbols recognization using project,inspired by dataset
 There are 82 classes of mathematical symbols including characters and digits that makes 375974 images. 
 The handwritten symbol as an input image and output should predict and classify the symbol from 82 classes available in the dataset.
 
+The available data set for training and prediction are 
+
+special chars ---> '!' '(' ')' '+' ',' '-' ,'=','[' ']','{','}'
+-------------------------
+numbers --->  '0' '1' '2' '3' '4' '5' '6' '7' '8' '9' 
+-------------------------
+Capital Letters ---> 'A','C','G' 'H' 'M' 'N' 'R' 'S' 'T' 'X'
+-------------------------
+Small Letters ---> 'b' ,'d','e','f','j' 'k' 'l', 'o' ,'p','q','u', 'v', 'w','y','z' 
+Maths symbol---> 'alpha', 'ascii_124','beta' ,'cos','exists','forall','forward_slash','gamma', 'geq', 'gt' ,'in', 'infty', 'int','lambda' ,'ldots',
+ 'leq', 'lim', 'log', 'lt', 'mu', 'neq','lambda' ,'ldots','leq', 'lim' ,'log', 'lt', 'mu' ,'neq','rightarrow', 'sigma', 'sin', 'sqrt', 'sum', 'tan', 'theta', 'times'
+ -------------------------
+ 
