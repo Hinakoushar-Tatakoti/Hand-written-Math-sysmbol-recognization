@@ -7,9 +7,9 @@ Group members:
 1)Hinakoushar Tatakoti
 2)Hafiz M Amir Hussain
 
-[**1)Introduction and Goal:**](#-introduction-and-goal)
+[**1)Introduction and Goal:**](# introduction-and-goal)
 
-[**2)Motivation:**](#-Motivation)
+[**2)Motivation:**](# Motivation)
 
 [**3)Abstract:**](#Abstract)
 
@@ -21,14 +21,14 @@ Group members:
 
 [**7)Task Diagram:**](#Task-Diagram)
 
-##Introduction and Goal
+# Introduction and Goal
 
 With the advancement of technology., computers become more human like. It naturally makes sense for them to be able to read human writing. This project was developed to experiment with a computer’s ability to read human handwriting i.e. inconsistent styles and patterns with same meaning. This project aligns with computer vision, pattern recognition and artificial intelligence and employs machine learning and image processing techniques.However, offline handwritten recognition is used for the scanned documents; it is less appealing than online.
 Competition on Recognition of Online Handwritten Mathematical Expressions(CROHME) 2016 concluded that the recognition of HMEs was still a challenge after six years of competition.The online method works well for connected strokes or cursive strokes, while the offline way can overcome the problem
 of out-of-order strokes or duplicated strokes using contextual information.
 Goal is to Increase the accuracy,Insert the more layers to existing model.Use of pretrained model mobileNetV2 for 45*45 image size with increased filter or same filter size as existing.Different Hyperparameters to tune the model [learning rate(0.01- 0.00001), optimization function (ADAM and SGD), activation functions (RelU, tanH), loss functions (softmax and sigmoid)]
 
-##Motivation
+# Motivation
 
 Due to the technological advances in recent years, paper scientific documents are used less and less. Thus, the trend in the scientific community to use digital documents has increased considerably. Among these documents, there are scientific documents and more specifically mathematics documents.So this project give a basic prediction of mathematical symbol, to research recognizing handwritten math language in variety of applications.The main motivation for this work is both recognizing of the handwritten mathematical symbol, digits and characters which can be further be used for mathematical expression recognition.
 
