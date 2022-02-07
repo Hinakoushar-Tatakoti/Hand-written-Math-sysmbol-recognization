@@ -9,17 +9,26 @@ Group members:
 
 [**1)Introduction and Goal:**](#-introduction-and-goal)
 
-[**2)Motivation:**](#-Motivation)
+[**2)Motivation:**](#-motivation)
 
-[**3)Abstract:**](#Abstract)
+[**3)Abstract:**](#abstract)
 
-[**4)Dataset:**](#Dataset)
+[**4)Dataset:**](#dataset)
 
-[**5)Sample Size:**](#Sample-Size)
+[**5)Sample Size:**](#sample-Size)
 
-[**6)Tools used:**](#Tools-used)
+[**6)Tools used:**](#tools-used)
 
-[**7)Task Diagram:**](#Task-Diagram)
+[**7)Task Diagram:**](#task-Diagram)
+
+[**8)Model 2- Pretrained mobileNetV2:**](#model-2--pretrained-mobilenetv2)
+
+[**9)Model-3 -Trained from Scartch:**](#model-3--trained-from-scartch)
+
+[**10)Summary:**](#summary)
+
+[**11)References:**](#references)
+
 
 # Introduction and Goal
 
@@ -32,7 +41,7 @@ Goal is to Increase the accuracy,Insert the more layers to existing model.Use of
 
 Due to the technological advances in recent years, paper scientific documents are used less and less. Thus, the trend in the scientific community to use digital documents has increased considerably. Among these documents, there are scientific documents and more specifically mathematics documents.So this project give a basic prediction of mathematical symbol, to research recognizing handwritten math language in variety of applications.The main motivation for this work is both recognizing of the handwritten mathematical symbol, digits and characters which can be further be used for mathematical expression recognition.
 
-**Dataset**
+# Dataset
 
 Source: https://www.kaggle.com/xainano/handwrittenmathsymbols
 It includes basic Greek alphabet symbols like: 
@@ -40,13 +49,13 @@ alpha, beta, gamma, mu, sigma, phi and theta.English alphanumeric symbols are in
 
 ![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/dataset.jpg)
 
-**Abstract**
+# Abstract
 
 Offline Handwritten math symbols recognization using project,inspired by dataset on kaggle(https://www.kaggle.com/xainano/handwrittenmathsymbols).Thesesysmbols are parsed, extracted and modified from inkML of CROHME(http://www.isical.ac.in/~crohme/index.html) dataset.
 There are 82 classes of mathematical symbols including characters and digits that makes 375974 images. 
 The handwritten symbol as an input image and output should predict and classify the symbol from 82 classes available in the dataset.
 
-**Sample Size**
+# Sample Size
 
 The available data set for training and prediction are 
 
@@ -61,13 +70,14 @@ Small Letters ---> 'b' ,'d','e','f','j' ,'k', 'l', 'o' ,'p','q','u','v','w','y',
 Maths symbol---> 'alpha','ascii_124','beta' ,'cos','exists','forall','forward_slash','gamma', 'geq', 'gt' ,'in', 'infty', 'int','lambda' ,'ldots',
  'leq', 'lim', 'log', 'lt', 'mu', 'neq','lambda' ,'ldots','leq', 'lim' ,'log', 'lt', 'mu' ,'neq','rightarrow', 'sigma', 'sin', 'sqrt', 'sum', 'tan', 'theta', 'times'
 
-**Tools Used** Google colab + kaggle + github
+#Tools Used
+Google colab + kaggle + github
 
-**Task Diagram**
+# Task Diagram
 
 ![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/Recognization_Model.jpg)
 
-**Model 1- Training from scratch**
+# Model 1- Training from scratch
 
 Model is build from scartch using 1 input layer, 2 hidden layers and one output layer.
 used kernel size 2*2
@@ -106,6 +116,81 @@ lab = ['tan'  '='  'l' 'log'  '-' 'pm'  'X'
  
  
  ![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/model-1-predictions.jpg)
+
+
+# Model 2- Pretrained mobileNetV2
+
+Model is pretrained on MobileNetV2 with imagenet weights 
+
+
+
+**Model Layers**
+
+ ![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/model-2-summary.jpg)
+
+**Hyperparameter Optimization**
+
+![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/model-2-predictions.jpg)
+
+**model evaluation**
+
+![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/model-2-model-accuracy.jpg)
+
+![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/model-2-model-loss.jpg)
+
+
+**Prediction**
+![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/model-2-predictions.jpg)
+
+
+
+# Model-3 -Trained from Scartch
+
+
+**Model Layers**
+
+
+![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/model-3-summary.jpg)
+
+
+**Hyperparameter Optimization**
+
+**Model evaluation**
+
+![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/model-3-evaluation.jpg)
+
+
+
+**Prediction**
+![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/model-3-predictions3.jpg)
+
+# Summary
+
+* Trained from scratch model recognized better than pretrained model.
+* Pretrained model using MobileNetV2 ( weights imagnet) not quite good prediction.
+* The higher dimension images not performed well during predictions.
+* Model with 3 Conv layers worked better.
+* More GPU power to try with different hyperparameters.
+* Google colab often disconnects the session it’s problematic for training.
+* Drawback faced, saving a model and weights directly into Github not possible.
+
+
+# References
+
+https://www.tensorflow.org/guide/keras/writing_a_training_loop_from_scratch
+
+https://towardsdatascience.com/creating-a-trashy-model-from-scratch-with-tensorflow-2-an-example-with-an-anomaly-detection-27f0d1d7bd00
+
+https://towardsdatascience.com/understanding-and-implementing-lenet-5-cnn-architecture-deep-learning-a2d531ebc342
+
+https://www.kaggle.com/xainano/handwrittenmathsymbols
+
+https://github.com/ThomasLech/CROHME_extractor
+
+https://stackoverflow.com/questions/67266161/how-to-train-amd-test-dataset-of-images-downloaded-from-kaggle
+
+https://github.com/RichmondAlake/tensorflow_2_tutorials/blob/master/13_lenet-5.ipynb
+
 
 
 
