@@ -9,19 +9,19 @@ Group members:
 
 [**1)Introduction and Goal:**](#introduction-and-goal)
 
-[**#2)Motivation:**](#Motivation)
+[**2)Motivation:**](#Motivation)
 
-**#3)Abstract:**
+[**3)Abstract:**]
 
-#**4)Dataset:**
+[**4)Dataset:**]
 
-#**5)Sample Size:**
+[**5)Sample Size:**]
 
-#**6)Tools used:**
+[**6)Tools used:**]
 
-#**7)Task Diagram:**
+[**7)Task Diagram:**]
 
-**Introduction and Goal:**
+**Introduction and Goal:**(#introduction-and-goal)
 
 With the advancement of technology., computers become more human like. It naturally makes sense for them to be able to read human writing. This project was developed to experiment with a computer’s ability to read human handwriting i.e. inconsistent styles and patterns with same meaning. This project aligns with computer vision, pattern recognition and artificial intelligence and employs machine learning and image processing techniques.However, offline handwritten recognition is used for the scanned documents; it is less appealing than online.
 Competition on Recognition of Online Handwritten Mathematical Expressions(CROHME) 2016 concluded that the recognition of HMEs was still a challenge after six years of competition.The online method works well for connected strokes or cursive strokes, while the offline way can overcome the problem
