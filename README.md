@@ -7,9 +7,9 @@ Group members:
 1)Hinakoushar Tatakoti
 2)Hafiz M Amir Hussain
 
-[**1)Introduction and Goal:**](# introduction-and-goal)
+[**1)Introduction and Goal:**](#-introduction-and-goal)
 
-[**2)Motivation:**](# Motivation)
+[**2)Motivation:**](#-Motivation)
 
 [**3)Abstract:**](#Abstract)
 
