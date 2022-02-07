@@ -1,5 +1,5 @@
 # Offline Handwritten Mathematical Symbols Reorganization using CNN
-Using Image Processing
+Using Image Processing Project contains different jupyter notebooks and evaluation results.These notebooks can be directly opened in colab on click of button. Also it contains the information about the connecting to kaggle to get the dataset directly into colab working directory.
 
 Report:
 Group members: 
@@ -7,27 +7,31 @@ Group members:
 1)Hinakoushar Tatakoti
 2)Hafiz M Amir Hussain
 
+
+
 [**1)Introduction and Goal:**](#-introduction-and-goal)
 
 [**2)Motivation:**](#-motivation)
 
 [**3)Abstract:**](#abstract)
 
-[**4)Dataset:**](#dataset)
+[**4)Connected to kaggle**](#connected-to-kaggle)
 
-[**5)Sample Size:**](#sample-Size)
+[**5)Dataset:**](#dataset)
 
-[**6)Tools used:**](#tools-used)
+[**6)Sample Size:**](#sample-Size)
 
-[**7)Task Diagram:**](#task-Diagram)
+[**7)Tools used:**](#tools-used)
 
-[**8)Model 2- Pretrained mobileNetV2:**](#model-2--pretrained-mobilenetv2)
+[**8)Task Diagram:**](#task-Diagram)
 
-[**9)Model-3 -Trained from Scartch:**](#model-3--trained-from-scartch)
+[**9)Model 2- Pretrained mobileNetV2:**](#model-2--pretrained-mobilenetv2)
 
-[**10)Summary:**](#summary)
+[**10)Model-3 -Trained from Scartch:**](#model-3--trained-from-scartch)
 
-[**11)References:**](#references)
+[**11)Summary:**](#summary)
+
+[**12)References:**](#references)
 
 
 # Introduction and Goal
@@ -54,6 +58,14 @@ alpha, beta, gamma, mu, sigma, phi and theta.English alphanumeric symbols are in
 Offline Handwritten math symbols recognization using project,inspired by dataset on kaggle(https://www.kaggle.com/xainano/handwrittenmathsymbols).Thesesysmbols are parsed, extracted and modified from inkML of CROHME(http://www.isical.ac.in/~crohme/index.html) dataset.
 There are 82 classes of mathematical symbols including characters and digits that makes 375974 images. 
 The handwritten symbol as an input image and output should predict and classify the symbol from 82 classes available in the dataset.
+
+# Connected to kaggle
+
+Directly dataset is downloaded from kaggle and extracted into google colab using below steps
+
+
+![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/connecting_kaggle.jpg)
+
 
 # Sample Size
 
