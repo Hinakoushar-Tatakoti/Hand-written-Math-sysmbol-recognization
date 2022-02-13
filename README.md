@@ -5,6 +5,7 @@ Report:
 Group members: 
 
 1)Hinakoushar Tatakoti
+
 2)Hafiz M Amir Hussain
 
 
@@ -43,7 +44,8 @@ Goal is to Increase the accuracy,Insert the more layers to existing model.Use of
 
 # Motivation
 
-Due to the technological advances in recent years, paper scientific documents are used less and less. Thus, the trend in the scientific community to use digital documents has increased considerably. Among these documents, there are scientific documents and more specifically mathematics documents.So this project give a basic prediction of mathematical symbol, to research recognizing handwritten math language in variety of applications.The main motivation for this work is both recognizing of the handwritten mathematical symbol, digits and characters which can be further be used for mathematical expression recognition.
+Due to the technological advances in recent years, paper scientific documents are used less and less. Thus, the trend in the scientific community to use digital documents has increased considerably. Among these documents, there are scientific documents and more specifically mathematics documents.
+So this project give a basic prediction of mathematical symbol, to research recognizing handwritten math language in variety of applications.The main motivation for this work is both recognizing of the handwritten mathematical symbol, digits and characters which can be further be used for mathematical expression recognition.
 
 # Dataset
 
@@ -134,15 +136,20 @@ lab = ['tan'  '='  'l' 'log'  '-' 'pm'  'X'
 
 Model is pretrained on MobileNetV2 with imagenet weights 
 
-
+base_model=tf.keras.applications.MobileNetV2( include_top=False, input_shape=(128,128,3), pooling='max', weights='imagenet')
 
 **Model Layers**
 
  ![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/model-2-summary.jpg)
 
 **Hyperparameter Optimization**
+the last layer modified added, BatchNormalization, Dense layer, Dropout layer and final fully connected layer
+Epoch: 5
+Time:60 mins for each epoch
+learning_rate=.001
 
-![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/model-2-predictions.jpg)
+![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/model-2-training-accuracy.jpg)
+
 
 **model evaluation**
 
@@ -152,28 +159,43 @@ Model is pretrained on MobileNetV2 with imagenet weights
 
 
 **Prediction**
+Prediction for the pretrained on MobileNetV2 with imagenet weights quite not quite.Eventhough accuracy is very good achieved 97% but prediction probability alomost between 5-10 for every images, only abale to recognize few symobols.
+
 ![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/model-2-predictions.jpg)
 
 
 
 # Model-3 -Trained from Scartch
 
+As pretrained model is not predicting quite well, i had to choose training from scartch using CNN, i have used 1 input layer , 2 sub sampling layer and 2 fully connected layers.Total 210,494 trainiable parameters none non-trainable parameters.
+
 
 **Model Layers**
-
 
 ![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/model-3-summary.jpg)
 
 
 **Hyperparameter Optimization**
 
+Image dim: (45,45,1)
+learning_rate = 5e-4 = 0.0005
+Time taken: 30 mins for each epoch
+
 **Model evaluation**
+
+training accuracy: 
+loss: 0.3323 - accuracy: 0.8979 - val_loss: 0.3079 - val_accuracy: 0.9053
+
+Model Evaluation:
+loss: 0.3079 - accuracy: 0.90580.3079117238521576 0.9057754278182983
 
 ![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/model-3-evaluation.jpg)
 
 
-
 **Prediction**
+
+Prediction quite better than model-2, as model-3 is able to predict 15-20 symbols accurately with high probability rate.
+
 ![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/model-3-predictions3.jpg)
 
 # Summary
