@@ -84,7 +84,8 @@ Small Letters ---> 'b' ,'d','e','f','j' ,'k', 'l', 'o' ,'p','q','u','v','w','y',
 Maths symbol---> 'alpha','ascii_124','beta' ,'cos','exists','forall','forward_slash','gamma', 'geq', 'gt' ,'in', 'infty', 'int','lambda' ,'ldots',
  'leq', 'lim', 'log', 'lt', 'mu', 'neq','lambda' ,'ldots','leq', 'lim' ,'log', 'lt', 'mu' ,'neq','rightarrow', 'sigma', 'sin', 'sqrt', 'sum', 'tan', 'theta', 'times'
 
-#Tools Used
+# Tools Used
+
 Google colab + kaggle + github
 
 # Task Diagram
