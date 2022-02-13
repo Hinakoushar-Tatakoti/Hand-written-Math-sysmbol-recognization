@@ -177,7 +177,7 @@ As pretrained model is not predicting quite well, i had to choose training from 
 
 
 **Hyperparameter Optimization**
-
+total 3 epoch is used
 Image dim: (45,45,1)
 learning_rate = 5e-4 = 0.0005
 Time taken: 30 mins for each epoch
@@ -186,8 +186,10 @@ Time taken: 30 mins for each epoch
 
 training accuracy: 
 loss: 0.3323 - accuracy: 0.8979 - val_loss: 0.3079 - val_accuracy: 0.9053
+![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/model-3-training-accuracy.jpg)
 
-Model Evaluation:
+
+test Evaluation:
 loss: 0.3079 - accuracy: 0.90580.3079117238521576 0.9057754278182983
 
 ![alt text](https://github.com/Hinakoushar-Tatakoti/Hand-written-Math-sysmbol-recognization/blob/master/images/model-3-evaluation.jpg)
